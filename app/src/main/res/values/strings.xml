@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="intro_text1">This app gives you a step by step directions explaining
+how to prepare and cook various kinds of food. Use the search
+box in the app to search from our collection recommended
+or popular recipes</string>
+</resources>
