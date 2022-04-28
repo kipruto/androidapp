@@ -14,6 +14,14 @@
             android:exported="true"
             />
 
+        <activity android:name=".Mainscreen"
+            android:exported="true"
+            />
+
+        <activity android:name=".Introscreens"
+            android:exported="true"
+            />
+
         <activity android:name=".Splashscreen"
             android:exported="true"
             android:theme="@style/Splashscreen">

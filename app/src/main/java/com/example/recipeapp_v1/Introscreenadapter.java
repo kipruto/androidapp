@@ -14,11 +14,11 @@ import java.util.List;
 
 public class Introscreenadapter extends PagerAdapter {
 
-Context mContext;
+Context uContext;
 List<Introscreenscaffold>  mListIntroscreens;
 
- public Introscreenadapter(Context mContext, List<Introscreenscaffold>  mListIntroscreens){
-     this.mContext = mContext;
+ public Introscreenadapter(Context uContext, List<Introscreenscaffold>  mListIntroscreens){
+     this.uContext = uContext;
      this.mListIntroscreens = mListIntroscreens;
  }
 
@@ -27,11 +27,12 @@ List<Introscreenscaffold>  mListIntroscreens;
 
     public Object instantiateItem(@NonNull ViewGroup container, int position ){
 
-     LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-     View introscreenpage = inflater.inflate(R.layout.introscreenpage, null);
+     LayoutInflater inflater = (LayoutInflater) uContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+     View introscreenpage = inflater.inflate(R.layout.intro_pagelayout, null);
+     TextView description = introscreenpage.findViewById(R.id.introdescription);
      ImageView introImage = introscreenpage.findViewById(R.id.introimage);
      TextView title = introscreenpage.findViewById(R.id.introtext);
-     TextView description = introscreenpage.findViewById(R.id.introdescription);
+
 
      title.setText(mListIntroscreens.get(position).getheadTitle());
      description.setText(mListIntroscreens.get(position).getDescription());
@@ -48,12 +49,14 @@ List<Introscreenscaffold>  mListIntroscreens;
     }
 
     @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return false;
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object o) {
+        return view == o;
     }
 
     @Override
-    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull  Object object) {
-        container.removeView((View) object);
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+
+        container.removeView((View)object);
+
     }
 }

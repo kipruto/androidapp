@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Recipeapp_v1" parent="Theme.AppCompat.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFC107</item>
-        <item name="colorPrimaryVariant">#FFEB3B</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
         <item name="colorOnPrimary">#FFEB3B</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/black</item>
@@ -15,6 +15,12 @@
     </style>
 
         <style name="Splashscreen" parent="Theme.AppCompat.NoActionBar">
+            <item name="windowNoTitle">true</item>
+            <item name="windowActionBar">false</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowActionBar">false</item>
+            <item name="android:windowFullscreen">true</item>
+            <item name="android:windowContentOverlay">@null</item>
             <item name="android:windowBackground">@drawable/background_splash</item>
             <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         </style>
