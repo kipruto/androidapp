@@ -10,8 +10,8 @@ public class Mainscreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainscreen_layout);
 
+        setContentView(R.layout.mainscreen_layout);
 
     }
 }
