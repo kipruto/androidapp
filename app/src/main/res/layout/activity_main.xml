@@ -9,12 +9,9 @@
 
 
     <TextView
-        android:id="@+id/btnNext"
+        android:id="@+id/btnNexxt"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginBottom="324dp"
         android:background="#FFCE08"
         android:clickable="true"
         android:focusable="true"
@@ -24,9 +21,11 @@
         android:textFontWeight="900"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
